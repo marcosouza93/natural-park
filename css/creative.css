@@ -69,6 +69,16 @@ p {
   text-transform: none;
   color: #636362;
 }
+.bg-white ul > li {
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+  color: #636362;
+}
 .bg-dark {
   background-color: #222222;
   color: white;
@@ -340,9 +350,26 @@ header .header-content .header-content-inner p {
   margin-bottom: 0;
   font-size: 55px;
 }
+.contact-box {
+  padding: 25px 0;
+  margin: 0;
+}
+.contact-box p {
+  color: #ffffe1;
+  font-size: 12px;
+  font-family: Raleway, sans-serif;
+  line-height: 24px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+}
 .divider {
   border-right: 1px solid #FFF;
   min-height: 130px;
+}
+.border-white {
+  border: 1px solid #FFF;
 }
 .vcenter {
   display: flex;

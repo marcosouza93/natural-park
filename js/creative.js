@@ -35,6 +35,11 @@
         scale: 0.3,
         distance: '0px'
     }, 200);
+    sr.reveal('.sr-photo', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px'
+    }, 200);
     sr.reveal('.sr-nav', {
         duration: 600,
         scale: 0.3,
