@@ -45,6 +45,30 @@ p {
 .bg-primary {
   background-color: #69401d;
 }
+.bg-primary p {
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+  color: white;
+}
+.bg-white {
+  background-color: white;
+  padding: 80px 0 50px 0;
+}
+.bg-white p {
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+  color: #636362;
+}
 .bg-dark {
   background-color: #222222;
   color: white;
@@ -77,15 +101,15 @@ aside {
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-  color: #412812;
+  color: #69401d;
 }
 .navbar-default .navbar-header .navbar-brand .logo-position {
-  margin: -10px 0px 0px 100px;
+  margin-top: -29px;
 }
 .navbar-default .navbar-header .navbar-toggle {
   font-weight: 700;
   font-size: 12px;
-  color: #222222;
+  color: #69401d;
   text-transform: uppercase;
 }
 .navbar-default .nav > li > a,
@@ -93,7 +117,7 @@ aside {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 13px;
-  color: #222222;
+  color: #69401d;
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
@@ -101,12 +125,13 @@ aside {
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #69401d !important;
-  background-color: white;
+  color: white !important;
+  background-color: #69401d;
 }
 .navbar-default .nav > li.active > a:hover,
 .navbar-default .nav > li.active > a:focus:hover {
-  background-color: white;
+  color: white !important;
+  background-color: #69401d;
 }
 @media (min-width: 768px) {
   .navbar-default {
@@ -114,22 +139,23 @@ aside {
     border-color: rgba(255, 255, 255, 0.3);
   }
   .navbar-default .navbar-header .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
+    color: #69401d;
   }
   .navbar-default .navbar-header .navbar-brand:hover,
   .navbar-default .navbar-header .navbar-brand:focus {
-    color: white;
+    color: #69401d;
   }
   .navbar-default .navbar-header .navbar-brand .logo-position {
-    margin: -10px 0px 0px 100px;
+    margin-top: -29px;
   }
   .navbar-default .nav > li > a,
   .navbar-default .nav > li > a:focus {
-    color: rgba(255, 255, 255, 0.7);
+    color: #69401d;
   }
   .navbar-default .nav > li > a:hover,
   .navbar-default .nav > li > a:focus:hover {
     color: white;
+    background-color: #69401d;
   }
   .navbar-default.affix {
     background-color: white;
@@ -144,15 +170,15 @@ aside {
     color: #412812;
   }
   .navbar-default.affix .navbar-header .navbar-brand .logo-position {
-    margin: -10px 0px 0px 100px;
+    margin-top: -29px;
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
-    color: #222222;
+    color: #69401d;
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
-    color: #69401d;
+    color: white;
   }
 }
 header {
@@ -164,14 +190,13 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../images/banner-folhas.jpg');
+  background-color: #69401d;
   text-align: center;
   color: white;
 }
 header .header-content {
   position: relative;
   text-align: center;
-  padding: 100px 15px 100px;
   width: 100%;
 }
 header .header-content .header-content-inner h1 {
@@ -200,15 +225,14 @@ header .header-content .header-content-inner p {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    padding: 0 50px;
   }
   header .header-content .header-content-inner {
-    max-width: 1000px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
   header .header-content .header-content-inner h1 {
-    font-size: 50px;
+    font-size: 70px;
   }
   header .header-content .header-content-inner p {
     font-size: 18px;
@@ -285,6 +309,44 @@ header .header-content .header-content-inner p {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
+}
+.bird-box {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  color: white;
+  background-image: url('../images/Passarinho.jpg');
+}
+.bird-box h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 55px;
+}
+.bicycle-box {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  color: white;
+  background-image: url('../images/bicicleta.jpg');
+}
+.bicycle-box h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 55px;
+}
+.divider {
+  border-right: 1px solid #FFF;
+  min-height: 130px;
+}
+.vcenter {
+  display: flex;
+  align-items: center;
 }
 .call-to-action h2 {
   margin: 0 auto 20px;

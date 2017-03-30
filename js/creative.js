@@ -35,6 +35,26 @@
         scale: 0.3,
         distance: '0px'
     }, 200);
+    sr.reveal('.sr-nav', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px'
+    }, 200);
+    sr.reveal('.sr-text-1', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px'
+    }, 200);
+    sr.reveal('.sr-text-2', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px'
+    }, 200);
+    sr.reveal('.sr-text-3', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px'
+    }, 200);
     sr.reveal('.sr-button', {
         duration: 1000,
         delay: 200
