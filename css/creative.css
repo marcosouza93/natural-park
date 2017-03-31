@@ -61,7 +61,7 @@ p {
 }
 .bg-white p {
   font-family: Raleway, sans-serif;
-  font-size: 17px;
+  font-size: 14px;
   line-height: 24px;
   letter-spacing: 0px;
   font-weight: 400;
@@ -146,7 +146,7 @@ aside {
 }
 @media (min-width: 768px) {
   .navbar-default {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.6);
     border-color: rgba(255, 255, 255, 0.3);
   }
   .navbar-default .navbar-header .navbar-brand {
@@ -321,35 +321,47 @@ header .header-content .header-content-inner p {
     font-size: 22px;
   }
 }
-.bird-box {
+.image-text-box {
   position: relative;
   width: 100%;
-  height: 500px;
+  min-height: 500px;
   background-position: center;
   color: white;
+}
+.image-text-box h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 55px;
+}
+@media (max-width: 990px) {
+  .image-text-box h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 36px;
+  }
+  .image-text-box img {
+    max-width: 200px;
+  }
+}
+@media (max-width: 750px) {
+  .image-text-box .col-xs-12 {
+    text-align: center;
+  }
+  .image-text-box img {
+    margin: 15px 0;
+  }
+}
+.bird-image {
   background-image: url('../images/Passarinho.jpg');
+  background-repeat: no-repeat;
 }
-.bird-box h1 {
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 55px;
-}
-.bicycle-box {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  background-position: center;
-  color: white;
+.bicycle-image {
   background-image: url('../images/bicicleta.jpg');
-}
-.bicycle-box h1 {
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 55px;
+  background-repeat: no-repeat;
 }
 .contact-box {
   padding: 25px 0;
@@ -357,7 +369,7 @@ header .header-content .header-content-inner p {
 }
 .contact-box p {
   color: #ffffe1;
-  font-size: 12px;
+  font-size: 13px;
   font-family: Raleway, sans-serif;
   line-height: 24px;
   letter-spacing: 0px;

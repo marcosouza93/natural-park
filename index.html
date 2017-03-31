@@ -24,6 +24,7 @@
 
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
+    <link href="vendor/animate-css/animate.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,47 +45,45 @@
 <body id="page-top">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container">
 
-            <div class="row" style="padding: 18px 0;">
             <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="col-sm-1 col-sm-offset-1 text-center navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">
-                      <img src="images/logo280x220px.png" width="100" height="auto" alt="" class="logo-position sr-nav" />
-                    </a>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="col-sm-4 col-sm-offset-4 col-md-offset-5 text-center collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active sr-nav">
-                            <a class="page-scroll" href="index.html">Home</a>
-                        </li>
-                        <li class="sr-nav">
-                            <a class="page-scrol" href="apartamento.html">Apartamento</a>
-                        </li>
-                        <li class="sr-nav">
-                            <a class="page-scroll" href="lazer.html">Lazer</a>
-                        </li>
-                        <li class="sr-nav">
-                            <a class="page-scroll" href="contato.html">Contato</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+            <div class="navbar-header" style="padding: 20px 0;">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img src="images/logo280x220px.png" width="100" height="auto" alt="" class="logo-position" />
+                </a>
             </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right zoomIn" style="padding: 20px 0;">
+                    <li class="active animated zoomIn" id="home">
+                        <a class="page-scroll" href="index.html">Home</a>
+                    </li>
+                    <li class="animated zoomIn"id="apartamento">
+                        <a class="page-scrol" href="apartamento.html">Apartamento</a>
+                    </li>
+                    <li class="animated zoomIn" id="lazer">
+                        <a class="page-scroll" href="lazer.html">Lazer</a>
+                    </li>
+                    <li class="animated zoomIn" id="contato">
+                        <a class="page-scroll" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
 
     <header>
-        <div class="header-content">
-          <div class="container-fluid" style="padding: 0; margin: 0;">
+        <div>
+          <div class="container-fluid no-padding">
               <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-xs-12">
                       <div id="myCarousel" class="carousel slide" data-ride="carousel">
                           <!-- Indicators -->
                           <ol class="carousel-indicators">
@@ -145,9 +144,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2 class="section-heading sr-text-1">O melhor lugar da sua vida!</h2>
-                    <hr class="light sr-text-1">
-                    <p class="sr-text-1">
+                    <h2 class="section-heading sr-1">O melhor lugar da sua vida!</h2>
+                    <hr class="light sr-1">
+                    <p class="sr-1">
                         Ser Natural é uma escolha. É ser apaixonado pela vida. É valorizar o tempo. É curtir a tranquilidade, é inspirar, é meditar. É paz, é equilíbrio. É acordar com canto dos pássaros. É curtir o som da natureza, o barulho do vento nas folhas das árvores. É ponderar que em meio ao verde a vida é perfeita. É tratar o meio ambiente com respeito. É permitir-se a um novo conceito de vida. É proporcionar uma infância repleta de aventuras inesquecíveis aos seus filhos. É acreditar que a vida sempre pode ser mais gostosa, mais bela e especial. É manter o sorriso por mais tempo no rosto e as lembranças por mais tempo na memória.
                         <b>Ser Natural é um estilo de vida! Natural Park. O Primeiro Apartamento Natural Life de Sorocaba. Descubra morando!</b>
                     </p>
@@ -156,16 +155,16 @@
         </div>
     </section>
 
-    <section class="bird-box">
+    <section class="image-text-box bird-image">
         <div class="container-fluid">
-            <div class="row vcenter">
-                <div class="col-sm-3 col-sm-offset-3">
-                    <img src="images/logotipo.png" alt="logotipo" />
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-6 col-sm-offset-1 col-md-offset-0 text-right">
+                    <img src="images/logotipo.png" alt="logotipo" class="sr-2" />
                 </div>
-                <div class="col-sm-6">
-                    <h1>NATURAL PARK</h1>
-                    <h1>O SEU CONDOMÍNIO</h1>
-                    <h1>O SEU APARTAMENTO</h1>
+                <div class="col-xs-12 col-sm-7 col-md-6 col-sm-offset-1 col-md-offset-0">
+                    <h1 class="sr-2">NATURAL PARK</h1>
+                    <h1 class="sr-2">O SEU CONDOMÍNIO</h1>
+                    <h1 class="sr-2">O SEU APARTAMENTO</h1>
                 </div>
             </div>
         </div>
@@ -175,14 +174,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-6">
-                    <p class="sr-text-2">
+                    <p class="sr-3">
                         Sua casa pode ser um apartamento. Sua vista pode ser o horizonte.
                         Seu jardim pode ser uma floresta. Seu vizinho pode ser a natureza.
                         Sua música pode ser os pássaros. Seu lazer pode ser um parque.
                         Sua qualidade de vida pode ser de verdade.
                         <b>Sua vida junto ao verde pode ser Natural Park!</b>
                     </p>
-                    <p class="sr-text-2">
+                    <p class="sr-3">
                         Um projeto que se destaca como único.
                         Em um dos pontos mais desejados e repleto de natureza de Sorocaba,
                         uma combinação rara de exclusividade, luxo e infraestrutura,
@@ -194,16 +193,16 @@
         </div>
     </section>
 
-    <section class="bicycle-box">
+    <section class="image-text-box bicycle-image">
         <div class="container-fluid">
-            <div class="row vcenter">
-                <div class="col-sm-6 text-right">
-                    <h1>NATURAL PARK</h1>
-                    <h1>O ESTILO DE VIDA</h1>
-                    <h1>QUE VOCÊ PROCURAVA</h1>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 text-right">
+                    <h1 class="sr-4">NATURAL PARK</h1>
+                    <h1 class="sr-4">O ESTILO DE VIDA</h1>
+                    <h1 class="sr-4">QUE VOCÊ PROCURAVA</h1>
                 </div>
-                <div class="col-sm-3">
-                    <img src="images/logotipo.png" alt="logotipo" />
+                <div class="col-xs-12 col-sm-6">
+                    <img src="images/logotipo.png" alt="logotipo" class="sr-4" />
                 </div>
             </div>
         </div>
@@ -213,13 +212,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 text-right">
-                    <p class="sr-text-3">
+                    <p class="sr-5">
                         Mais de 7.000m² de pura liberdade. <strong>Reservamos um verdadeiro parque natural,
                         com 50% do terreno destinado somente a natureza preservada e ao lazer.</strong>
                         Um sofisticado ponto de encontro de moradores, que poderão usufruir de um
                         clube particular.
                     </p>
-                    <p class="sr-text-3">
+                    <p class="sr-5">
                         Acordar com o canto dos pássaros. Sentir o cheiro da natureza.
                         Curtir o silêncio. Reencontrar a sensação de equilíbrio e bem-estar.
                         Aproveitar o melhor de dois mundos.
@@ -231,50 +230,7 @@
         </div>
     </section>
 
-    <section class="bg-primary contact-box">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3 vcenter divider">
-                    <a href="https://www.facebook.com/naturalparksorocaba/" target="_blank">
-                        <img src="images/face.png" alt="fb" style="margin-right: 10px;" title="Facebook" />
-                    </a>
-                    <a href="mailto:atendimento@naturalparkresidencial.com.br" target="_blank">
-                        <img src="images/contato.png" alt="contact" title="E-mail" />
-                    </a>
-                </div>
-                <div class="col-sm-3 vcenter divider">
-                    <p>
-                        Incorporação registrada em 06 de abril de 2016,
-                        sob o R. 5 da matrícula 140.331 do 1º Oficial
-                        de Registro de Imóveis de Sorocaba.
-                    </p>
-                </div>
-                <div class="col-sm-3 vcenter divider">
-                    <p>
-                        AV. 3 DE MARÇO 1.317 </br>
-                        ALTO DA BOA VISTA - SOROCABA </br>
-                        FONE.: (15) 3228-2221
-                    </p>
-                </div>
-                <div class="col-sm-3 vcenter divider" style="border-right: 1px solid #69401d;">
-                    <img src="images/logo-enplan.png" alt="enplan" style="margin-right: 4px;" />
-                    <img src="images/logo-puente.png" alt="puente" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-white" style="padding: 10px 0; margin: 0;">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <p style="padding: 0; margin: 0;">
-                        2017 © Todos os Direitos Reservados - Natural Park Residencial
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div data-include="footer"></div>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>

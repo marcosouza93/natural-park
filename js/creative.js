@@ -1,5 +1,8 @@
 (function($) {
     "use strict"; // Start of use strict
+    
+    // Inject HTML Template
+    initializeTemplate();
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
@@ -45,17 +48,27 @@
         scale: 0.3,
         distance: '0px'
     }, 200);
-    sr.reveal('.sr-text-1', {
+    sr.reveal('.sr-1', {
         duration: 600,
         scale: 0.3,
         distance: '0px'
     }, 200);
-    sr.reveal('.sr-text-2', {
+    sr.reveal('.sr-2', {
         duration: 600,
         scale: 0.3,
         distance: '0px'
     }, 200);
-    sr.reveal('.sr-text-3', {
+    sr.reveal('.sr-3', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px'
+    }, 200);
+    sr.reveal('.sr-4', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px'
+    }, 200);
+    sr.reveal('.sr-5', {
         duration: 600,
         scale: 0.3,
         distance: '0px'
@@ -87,3 +100,11 @@
     });
 
 })(jQuery); // End of use strict
+
+function initializeTemplate() {
+    var includes = $('[data-include]');
+    jQuery.each(includes, function(){
+      var file = 'template/' + $(this).data('include') + '.html';
+      $(this).load(file);
+    });
+}
