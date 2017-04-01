@@ -24,7 +24,7 @@
 
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
-    <link href="vendor/animate-css/animate.css" rel="stylesheet">
+    <link href="vendor/animate-css/animate.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,6 +39,15 @@
             src: url('font/raleway.regular.ttf') format("truetype");
         }
     </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            Typed.new('.typing', {
+                strings: ["First sentence.", "Second sentence."],
+                typeSpeed: 0
+            });
+        });
+    </script>
 
 </head>
 
@@ -59,17 +68,17 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right zoomIn" style="padding: 20px 0;">
-                    <li class="active animated zoomIn" id="home">
+                <ul class="nav navbar-nav navbar-right" style="padding: 20px 0;">
+                    <li class="active" id="home">
                         <a class="page-scroll" href="index.html">Home</a>
                     </li>
-                    <li class="animated zoomIn"id="apartamento">
+                    <li id="apartamento">
                         <a class="page-scrol" href="apartamento.html">Apartamento</a>
                     </li>
-                    <li class="animated zoomIn" id="lazer">
+                    <li id="lazer">
                         <a class="page-scroll" href="lazer.html">Lazer</a>
                     </li>
-                    <li class="animated zoomIn" id="contato">
+                    <li id="contato">
                         <a class="page-scroll" href="contato.html">Contato</a>
                     </li>
                 </ul>
@@ -80,70 +89,107 @@
     </nav>
 
     <header>
-        <div>
-          <div class="container-fluid no-padding">
-              <div class="row">
-                  <div class="col-xs-12">
-                      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                          <!-- Indicators -->
-                          <ol class="carousel-indicators">
-                              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                              <li data-target="#myCarousel" data-slide-to="1"></li>
-                              <li data-target="#myCarousel" data-slide-to="2"></li>
-                              <li data-target="#myCarousel" data-slide-to="3"></li>
-                              <li data-target="#myCarousel" data-slide-to="4"></li>
-                          </ol>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
 
-                          <!-- Wrapper for slides -->
-                          <div class="carousel-inner" role="listbox">
-                              <div class="item active">
-                                  <img src="images/banner-folhas.jpg" width="100%" height="auto" alt="" />
-                                  <!--<div class="carousel-caption">
-                                      <p>Naturalmente perfeito</p>
-                                      <hr>
-                                      <h1 id="home-heading">Se sentir realizado todos os dias</h1>
-                                      <hr>
-                                      <a href="#about" class="btn btn-primary btn-xl page-scroll">Conheça</a>
-                                  </div>-->
-                              </div>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/banner-folhas.jpg" width="100%" height="auto" alt="" />
+                    <div class="carousel-caption">
+                        <h3 class="animated fadeInDown">
+                            <span class="separator" style="border-bottom-color: #fff; width: 10%; border-bottom-width: 2px; border-bottom-style: solid; margin-right: 15px;"></span>
+                            <span>Naturalmente perfeito</span>
+                            <span class="separator" style="border-bottom-color: #fff; width: 10%; border-bottom-width: 2px; border-bottom-style: solid; margin-right: 15px;"></span>
+                        </h3>
+                        <h1 id="home-heading" class="animated fadeInDown">Se sentir realizado todos os dias</h1>
+                        <a href="#about" class="btn btn-primary btn-xl page-scroll animated fadeInDown">Conheça</a>
+                    </div>
+                </div>
 
-                              <div class="item">
-                                  <img src="images/banner-fachada.jpg" width="100%" height="auto" alt="" />
-                              </div>
+                <div class="item">
+                    <img src="images/banner-fachada.jpg" width="100%" height="auto" alt="" />
+                    <div class="carousel-caption">
+                        <h3 class="animated fadeInDown">
+                            <span class="separator" style="border-bottom-color: #fff; width: 10%; border-bottom-width: 2px; border-bottom-style: solid; margin-right: 15px;"></span>
+                            <span>Naturalmente perfeito</span>
+                            <span class="separator" style="border-bottom-color: #fff; width: 10%; border-bottom-width: 2px; border-bottom-style: solid; margin-right: 15px;"></span>
+                        </h3>
+                        <h1 id="home-heading" class="animated fadeInDown">Você se sentir privilegiado</h1>
+                        <a href="#about" class="btn btn-primary btn-xl page-scroll animated fadeInDown">Conheça</a>
+                    </div>
+                </div>
 
-                              <div class="item">
-                                  <img src="images/banner-bosque.jpg" width="100%" height="auto" alt="" />
-                              </div>
+                <div class="item">
+                    <img src="images/banner-bosque.jpg" width="100%" height="auto" alt="" />
+                    <div class="carousel-caption">
+                        <h3 class="animated fadeInDown">
+                            <span class="separator" style="border-bottom-color: #fff; width: 10%; border-bottom-width: 2px; border-bottom-style: solid; margin-right: 15px;"></span>
+                            <span>Naturalmente perfeito</span>
+                            <span class="separator" style="border-bottom-color: #fff; width: 10%; border-bottom-width: 2px; border-bottom-style: solid; margin-right: 15px;"></span>
+                        </h3>
+                        <h1 id="home-heading" class="animated fadeInDown">Você achar que é um sonho</h1>
+                        <a href="#about" class="btn btn-primary btn-xl page-scroll animated fadeInDown">Conheça</a>
+                    </div>
+                </div>
 
-                              <div class="item">
-                                  <img src="images/banner-varanda.jpg" width="100%" height="auto" alt="" />
-                              </div>
+                <div class="item">
+                    <img src="images/banner-varanda.jpg" width="100%" height="auto" alt="" />
+                    <div class="carousel-caption">
+                        <h3 class="animated fadeInDown">
+                            <span class="separator" style="border-bottom-color: #fff; width: 10%; border-bottom-width: 2px; border-bottom-style: solid; margin-right: 15px;"></span>
+                            <span>Naturalmente perfeito</span>
+                            <span class="separator" style="border-bottom-color: #fff; width: 10%; border-bottom-width: 2px; border-bottom-style: solid; margin-right: 15px;"></span>
+                        </h3>
+                        <h1 id="home-heading" class="animated fadeInDown">Viver uma nova história de vida</h1>
+                        <a href="#about" class="btn btn-primary btn-xl page-scroll animated fadeInDown">Conheça</a>
+                    </div>
+                </div>
 
-                              <div class="item">
-                                  <img src="images/banner-portaria.jpg" width="100%" height="auto" alt="" />
-                              </div>
-                          </div>
+                <div class="item">
+                    <img src="images/banner-portaria.jpg" width="100%" height="auto" alt="" />
+                    <div class="carousel-caption">
+                        <h3 class="animated fadeInDown">
+                            <span class="separator" style="border-bottom-color: #fff; width: 10%; border-bottom-width: 2px; border-bottom-style: solid; margin-right: 15px;"></span>
+                            <span>Naturalmente perfeito</span>
+                            <span class="separator" style="border-bottom-color: #fff; width: 10%; border-bottom-width: 2px; border-bottom-style: solid; margin-right: 15px;"></span>
+                        </h3>
+                        <h1 id="home-heading" class="animated fadeInDown">Não ver a hora de voltar para casa</h1>
+                        <a href="#about" class="btn btn-primary btn-xl page-scroll animated fadeInDown">Conheça</a>
+                    </div>
+                </div>
+            </div>
 
-                          <!-- Left and right controls -->
-                          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
-                          </a>
-                          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
         </div>
     </header>
 
-    <section class="bg-white" style="padding: 100px 0 50px 0;">
+    <section class="bg-white" style="padding: 50px 0;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
+                    <div id="typed-strings">
+                        <span>Typed.js is a <strong>JavaScript</strong> library.</span>
+                        <p>It <em>types</em> out sentences.</p>
+                        <p>And then deletes them.</p>
+                        <p>Try it out!</p>
+                    </div>
+                    <h3 class="sr-1">Descubra</h3>
                     <h2 class="section-heading sr-1">O melhor lugar da sua vida!</h2>
                     <hr class="light sr-1">
                     <p class="sr-1">
@@ -158,13 +204,15 @@
     <section class="image-text-box bird-image">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12 col-sm-3 col-md-6 col-sm-offset-1 col-md-offset-0 text-right">
-                    <img src="images/logotipo.png" alt="logotipo" class="sr-2" />
-                </div>
-                <div class="col-xs-12 col-sm-7 col-md-6 col-sm-offset-1 col-md-offset-0">
-                    <h1 class="sr-2">NATURAL PARK</h1>
-                    <h1 class="sr-2">O SEU CONDOMÍNIO</h1>
-                    <h1 class="sr-2">O SEU APARTAMENTO</h1>
+                <div class="vcenter">
+                    <div class="col-xs-12 col-sm-3 col-md-6 col-sm-offset-1 col-md-offset-0 text-right">
+                        <img src="images/logotipo.png" alt="logotipo" class="sr-2" />
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-md-6 col-sm-offset-1 col-md-offset-0">
+                        <h1 class="sr-2">NATURAL PARK</h1>
+                        <h1 class="sr-2">O SEU CONDOMÍNIO</h1>
+                        <h1 class="sr-2">O SEU APARTAMENTO</h1>
+                    </div>
                 </div>
             </div>
         </div>
@@ -196,13 +244,15 @@
     <section class="image-text-box bicycle-image">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 text-right">
-                    <h1 class="sr-4">NATURAL PARK</h1>
-                    <h1 class="sr-4">O ESTILO DE VIDA</h1>
-                    <h1 class="sr-4">QUE VOCÊ PROCURAVA</h1>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <img src="images/logotipo.png" alt="logotipo" class="sr-4" />
+                <div class="vcenter">
+                    <div class="col-xs-12 col-sm-6 text-right">
+                        <h1 class="sr-4">NATURAL PARK</h1>
+                        <h1 class="sr-4">O ESTILO DE VIDA</h1>
+                        <h1 class="sr-4">QUE VOCÊ PROCURAVA</h1>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <img src="images/logotipo.png" alt="logotipo" class="sr-4" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -242,8 +292,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="vendor/typed-js/typed.min.js"></script>
 
-    <!-- Theme JavaScript -->
+    <!-- Main JavaScript -->
     <script src="js/creative.min.js"></script>
 
 </body>

@@ -205,7 +205,6 @@ aside {
 }
 
 // Homepage Header
-
 header {
     position: relative;
     width: 100%;
@@ -238,8 +237,23 @@ header {
             }
         }
     }
+    h1 {
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 70px;
+    }
+    @media (max-width: 990px) {
+        h1 {
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 36px;
+        }
+    }
     @media (min-width: 768px) {
-        min-height: 100%;
         .header-content {
             position: absolute;
             top: 50%;
@@ -400,19 +414,78 @@ header {
         }
 }
 
-.divider {
-    border-right: 1px solid #FFF;
-    min-height: 130px;
-}
-
 .border-white {
     border: 1px solid #FFF;
 }
 
-.vcenter {
-    display: flex;
-    align-items: center;
-  }
+// Large devices
+@media (min-width: 1170px) {
+    .divider {
+        border-right: 1px solid #FFF;
+        padding: 0 50px;
+    }
+    .carousel-caption {
+        top: 20%;
+        bottom: auto;
+        .btn {
+            margin-top: 100px;
+        }
+    }
+}
+
+// Medium devices
+@media (min-width: 750px) {
+    .vcenter {
+        display: flex;
+        align-items: center;
+    }
+    .divider {
+        min-height: 130px;
+    }
+}
+
+// Small devices
+@media (max-width: 750px) {
+    .divider {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    #myCarousel {
+        margin-top: 95px;
+        .carousel-caption {
+            top: 10%;
+            bottom: auto;
+            h1 {
+                font-weight: 150;
+                text-transform: uppercase;
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 30px;
+            }
+            h3 {
+                font-size: 25px;
+                line-height: 40px;
+                font-family: "Marck Script";
+                font-style: italic;
+                font-weight: 100;
+                text-transform: capitalize;
+                margin-bottom: 14px;
+                letter-spacing: 0px;
+            }
+            .btn {
+                font-size: 10px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+        display: block;
+        max-width: initial;
+        width: auto;
+        height: 350px;
+    }
+}
 
 .call-to-action {
     h2 {
@@ -420,14 +493,77 @@ header {
     }
 }
 
+// Typed JS
+.typed-cursor{
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
 // Bootstrap Overrides
 .text-primary {
     color: @theme-primary;
 }
 
+h3 {
+  font-size: 36px;
+  line-height: 40px;
+  font-family: "Marck Script";
+  font-style: italic;
+  font-weight: 100;
+  text-transform: capitalize;
+  margin-bottom: 14px;
+  letter-spacing: 0px;
+}
+
+.btn {
+    border-radius: 0px!important;
+}
+
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
+}
+
+.carousel-caption h3:first-child {
+    animation-delay: 0.5s;
+}
+
+.carousel-caption h1:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.carousel-caption a {
+    animation-delay: 1.5s;
 }
 
 // Button Styles

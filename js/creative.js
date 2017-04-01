@@ -1,8 +1,13 @@
 (function($) {
     "use strict"; // Start of use strict
-    
+
     // Inject HTML Template
     initializeTemplate();
+
+    // Set carousel properties
+    $('.carousel').carousel({
+        interval: 5000
+    })
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
