@@ -38,17 +38,13 @@
             font-family: "Raleway";
             src: url('font/raleway.regular.ttf') format("truetype");
         }
+        @font-face {
+            font-family: "Marck Script";
+            src: url('font/MarckScript-Regular.ttf') format("truetype");
+        }
     </style>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function(){
-            Typed.new('.typing', {
-                strings: ["First sentence.", "Second sentence."],
-                typeSpeed: 0
-            });
-        });
-    </script>
-
+    <script src="vendor/typed-js/typed.min.js"></script>
 </head>
 
 <body id="page-top">
@@ -184,13 +180,12 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div id="typed-strings">
-                        <span>Typed.js is a <strong>JavaScript</strong> library.</span>
-                        <p>It <em>types</em> out sentences.</p>
-                        <p>And then deletes them.</p>
-                        <p>Try it out!</p>
+                        <span>Se você descobrir que encontrou</span>
+                        <span>O melhor lugar da sua vida</span>
+                        <span>É Natural!</span>
                     </div>
                     <h3 class="sr-1">Descubra</h3>
-                    <h2 class="section-heading sr-1">O melhor lugar da sua vida!</h2>
+                    <span id="typed" style="white-space:pre;"></span>
                     <hr class="light sr-1">
                     <p class="sr-1">
                         Ser Natural é uma escolha. É ser apaixonado pela vida. É valorizar o tempo. É curtir a tranquilidade, é inspirar, é meditar. É paz, é equilíbrio. É acordar com canto dos pássaros. É curtir o som da natureza, o barulho do vento nas folhas das árvores. É ponderar que em meio ao verde a vida é perfeita. É tratar o meio ambiente com respeito. É permitir-se a um novo conceito de vida. É proporcionar uma infância repleta de aventuras inesquecíveis aos seus filhos. É acreditar que a vida sempre pode ser mais gostosa, mais bela e especial. É manter o sorriso por mais tempo no rosto e as lembranças por mais tempo na memória.
@@ -292,7 +287,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="vendor/typed-js/typed.min.js"></script>
 
     <!-- Main JavaScript -->
     <script src="js/creative.min.js"></script>

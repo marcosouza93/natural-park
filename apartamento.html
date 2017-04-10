@@ -24,6 +24,7 @@
 
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
+    <link href="vendor/animate-css/animate.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,112 +38,122 @@
             font-family: "Raleway";
             src: url('font/raleway.regular.ttf') format("truetype");
         }
+        @font-face {
+            font-family: "Marck Script";
+            src: url('font/MarckScript-Regular.ttf') format("truetype");
+        }
     </style>
 
+    <script src="vendor/typed-js/typed.min.js"></script>
 </head>
 
 <body id="page-top">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container">
 
-            <div class="row" style="padding: 18px 0;">
             <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="col-sm-1 col-sm-offset-1 text-center navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">
-                      <img src="images/logo280x220px.png" width="100" height="auto" alt="" class="logo-position sr-nav" />
-                    </a>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="col-sm-4 col-sm-offset-4 col-md-offset-5 text-center collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="sr-nav">
-                            <a class="page-scroll" href="index.html">Home</a>
-                        </li>
-                        <li class="active sr-nav">
-                            <a class="page-scrol" href="apartamento.html">Apartamento</a>
-                        </li>
-                        <li class="sr-nav">
-                            <a class="page-scroll" href="lazer.html">Lazer</a>
-                        </li>
-                        <li class="sr-nav">
-                            <a class="page-scroll" href="contato.html">Contato</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+            <div class="navbar-header" style="padding: 20px 0;">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img src="images/logo280x220px.png" width="100" height="auto" alt="" class="logo-position" />
+                </a>
             </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" style="padding: 20px 0;">
+                    <li id="home">
+                        <a class="page-scroll" href="index.html">Home</a>
+                    </li>
+                    <li class="active" id="apartamento">
+                        <a class="page-scrol" href="apartamento.html">Apartamento</a>
+                    </li>
+                    <li id="lazer">
+                        <a class="page-scroll" href="lazer.html">Lazer</a>
+                    </li>
+                    <li id="contato">
+                        <a class="page-scroll" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
 
     <header>
-        <div class="header-content">
-          <div class="container-fluid" style="padding: 0;">
-              <div class="row">
-                  <div class="col-lg-12">
-                      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                          <!-- Indicators -->
-                          <ol class="carousel-indicators">
-                              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                              <li data-target="#myCarousel" data-slide-to="1"></li>
-                              <li data-target="#myCarousel" data-slide-to="2"></li>
-                          </ol>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
 
-                          <!-- Wrapper for slides -->
-                          <div class="carousel-inner" role="listbox">
-                              <div class="item active">
-                                  <img src="images/banner-quintal.jpg" width="100%" height="auto" alt="" />
-                                  <!--<div class="carousel-caption">
-                                      <p>Naturalmente perfeito</p>
-                                      <hr>
-                                      <h1 id="home-heading">Se sentir realizado todos os dias</h1>
-                                      <hr>
-                                      <a href="#about" class="btn btn-primary btn-xl page-scroll">Conheça</a>
-                                  </div>-->
-                              </div>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/banner-quintal.jpg" width="100%" height="auto" alt="" />
+                    <div class="carousel-caption">
+                        <h1 id="home-heading" class="animated fadeInDown">
+                            A nossa foi a nossa maior inspiração
+                        </h1>
+                    </div>
+                </div>
 
-                              <div class="item">
-                                  <img src="images/banner-meninas.jpg" width="100%" height="auto" alt="" />
-                              </div>
+                <div class="item">
+                    <img src="images/banner-meninas.jpg" width="100%" height="auto" alt="" />
+                    <div class="carousel-caption">
+                        <h1 id="home-heading" class="animated fadeInDown">
+                            Deixe a natureza envolver você
+                        </h1>
+                    </div>
+                </div>
 
-                              <div class="item">
-                                  <img src="images/banner-living.jpg" width="100%" height="auto" alt="" />
-                              </div>
-                          </div>
+                <div class="item">
+                    <img src="images/banner-living.jpg" width="100%" height="auto" alt="" />
+                    <div class="carousel-caption">
+                        <h1 id="home-heading" class="animated fadeInDown">
+                            Muita sofisticação para as ocasiões especiais
+                        </h1>
+                    </div>
+                </div>
 
-                          <!-- Left and right controls -->
-                          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
-                          </a>
-                          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
         </div>
     </header>
 
-    <section class="bg-white" style="padding: 100px 0 50px 0;">
+    <section class="bg-white" style="padding: 50px 0;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2 class="section-heading sr-text-1">Momentos Inesquecíveis</h2>
-                    <hr class="light sr-text-1">
-                    <p class="sr-text-1" style="font-size: 17px; line-height: 29px;">
+                    <div id="typed-strings">
+                        <span>Espaços que transformam</span>
+                        <span>Ocasiões em</span>
+                        <span>Momentos inesquecíveis</span>
+                    </div>
+                    <h3 class="sr-1">Descubra</h3>
+                    <span id="typed" style="white-space:pre;"></span>
+                    <hr class="light sr-1">
+                    <p class="sr-1" style="font-size: 17px; line-height: 29px;">
                         Se você desejar reunir os amigos todas as semanas. <b>É Natural.</b>
                         Seu apartamento emoldurado por uma atmosfera de magia. Muito espaço e uma ampla vista para os seus melhores momentos.
                         <b>Sinta em casa, dentro ou fora dela.</b>
                     </p>
-                    <p class="sr-text-1" style="font-size: 17px; line-height: 29px;">
+                    <p class="sr-1" style="font-size: 17px; line-height: 29px;">
                         Os apartamentos giardino são uma atração à parte.
                         Integrado a varanda gourmet, no mesmo plano de visão do living,
                         projetamos o seu quintal particular, um espaço exclusivamente seu,
@@ -291,12 +302,12 @@
         <div class="container">
             <div class="row no-gutter popup-gallery">
                 <div class="row">
-                    <div class="col-md-6 sr-text-2">
+                    <div class="col-md-6 sr-2">
                         <a href="images/apartamento/planta-1.jpg" class="portfolio-box">
                             <img src="images/apartamento/planta-1.jpg" class="img-responsive" alt="" style="max-width: 600px;" />
                         </a>
                     </div>
-                    <div class="col-md-6 sr-text-2">
+                    <div class="col-md-6 sr-2">
                         <h1>TIPO 63M²</h1>
                         <ul>
                             <li>2 Dormitorios com 1 suíte</li>
@@ -309,12 +320,12 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 sr-text-2">
+                    <div class="col-md-6 sr-2">
                         <a href="images/apartamento/planta-2.jpg" class="portfolio-box">
                             <img src="images/apartamento/planta-2.jpg" class="img-responsive" alt="" style="max-width: 600px;" />
                         </a>
                     </div>
-                    <div class="col-md-6 sr-text-2">
+                    <div class="col-md-6 sr-2">
                         <h1>GIARDINO 63M²</h1>
                         <ul>
                             <li>Pavimento Térreo</li>
@@ -329,7 +340,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 sr-text-2">
+                    <div class="col-md-6 sr-2">
                         <a href="images/apartamento/planta-3.jpg" class="portfolio-box">
                             <img src="images/apartamento/planta-3.jpg" class="img-responsive" alt="" style="max-width: 600px;" />
                         </a>
@@ -338,7 +349,7 @@
                         </a>
                     </div>
 
-                    <div class="col-md-6 sr-text-2">
+                    <div class="col-md-6 sr-2">
                         <h1>COBERTURA DUPLEX 120M²</h1>
                         <ul>
                             <li>2 Dormitorios com 1 suíte</li>
@@ -360,50 +371,7 @@
         </div>
     </section>
 
-    <section class="bg-primary contact-box">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3 vcenter divider">
-                    <a href="https://www.facebook.com/naturalparksorocaba/" target="_blank">
-                        <img src="images/face.png" alt="fb" style="margin-right: 10px;" title="Facebook" />
-                    </a>
-                    <a href="mailto:atendimento@naturalparkresidencial.com.br" target="_blank">
-                        <img src="images/contato.png" alt="contact" title="E-mail" />
-                    </a>
-                </div>
-                <div class="col-sm-3 vcenter divider">
-                    <p>
-                        Incorporação registrada em 06 de abril de 2016,
-                        sob o R. 5 da matrícula 140.331 do 1º Oficial
-                        de Registro de Imóveis de Sorocaba.
-                    </p>
-                </div>
-                <div class="col-sm-3 vcenter divider">
-                    <p>
-                        AV. 3 DE MARÇO 1.317 </br>
-                        ALTO DA BOA VISTA - SOROCABA </br>
-                        FONE.: (15) 3228-2221
-                    </p>
-                </div>
-                <div class="col-sm-3 vcenter divider" style="border-right: 1px solid #69401d;">
-                    <img src="images/logo-enplan.png" alt="enplan" style="margin-right: 4px;" />
-                    <img src="images/logo-puente.png" alt="puente" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-white" style="padding: 10px 0; margin: 0;">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <p style="padding: 0; margin: 0; font-size: 12px;">
-                        2017 © Todos os Direitos Reservados - Natural Park Residencial
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div data-include="footer"></div>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -416,7 +384,7 @@
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-    <!-- Theme JavaScript -->
+    <!-- Main JavaScript -->
     <script src="js/creative.min.js"></script>
 
 </body>

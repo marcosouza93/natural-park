@@ -80,6 +80,22 @@ p {
   text-transform: none;
   color: #636362;
 }
+.bg-white span {
+  font-family: Raleway;
+  font-size: 33px;
+  line-height: 1em;
+  font-style: normal;
+  font-weight: 900;
+  color: #000000;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px 0px 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.bg-white h3 {
+  color: #331b00;
+}
 .bg-dark {
   background-color: #222222;
   color: white;
@@ -465,11 +481,14 @@ header h1 {
 }
 .typed-cursor {
   opacity: 1;
+  font-weight: 100;
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
+  -ms-animation: blink 0.7s infinite;
+  -o-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
 }
-@keyframes blink {
+@-keyframes blink {
   0% {
     opacity: 1;
   }
@@ -492,6 +511,28 @@ header h1 {
   }
 }
 @-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes blink {
   0% {
     opacity: 1;
   }

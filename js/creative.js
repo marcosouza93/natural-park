@@ -7,7 +7,29 @@
     // Set carousel properties
     $('.carousel').carousel({
         interval: 5000
-    })
+    });
+
+    // Configuring the typed text
+    document.addEventListener('DOMContentLoaded', function(){
+        Typed.new("#typed", {
+            stringsElement: document.getElementById('typed-strings'),
+            typeSpeed: 150,
+            backDelay: 500,
+            // loop
+	          loop: true,
+	          // null = infinite
+	          loopCount: null,
+            contentType: 'html', // or text
+            resetCallback: function() { newTyped(); }
+        });
+
+        var resetElement = document.querySelector('.reset');
+        if(resetElement) {
+            resetElement.addEventListener('click', function() {
+                document.getElementById('typed')._typed.reset();
+            });
+        }
+    });
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
