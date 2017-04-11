@@ -93,8 +93,27 @@ p {
   text-transform: uppercase;
   text-align: center;
 }
+.bg-white h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 .bg-white h3 {
   color: #331b00;
+}
+.bg-white .green {
+  color: #808000;
+}
+.bg-gray {
+  background-color: #eaeaea;
+  padding: 80px 0 50px 0;
+}
+.bg-brown {
+  background-color: #331b00;
+  padding: 80px 0 50px 0;
 }
 .bg-dark {
   background-color: #222222;
@@ -217,7 +236,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-color: #69401d;
+  background-color: white;
   text-align: center;
   color: white;
 }
