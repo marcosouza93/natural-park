@@ -502,22 +502,25 @@ header h1 {
   #myCarousel .carousel-caption {
     top: 10%;
     bottom: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border: 1px double white;
   }
   #myCarousel .carousel-caption h1 {
     font-weight: 150;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 30px;
+    font-size: 25px;
   }
   #myCarousel .carousel-caption h3 {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 40px;
     font-family: "Marck Script";
     font-style: italic;
     font-weight: 100;
     text-transform: capitalize;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
     letter-spacing: 0px;
   }
   #myCarousel .carousel-caption .btn {
