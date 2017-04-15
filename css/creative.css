@@ -40,7 +40,7 @@ h6 {
 p {
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin: 0!important;
 }
 .bg-primary {
   background-color: #69401d;
@@ -726,6 +726,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-primary .badge {
   color: #69401d;
   background-color: white;
+}
+.btn-primary:active {
+  background-color: #69401d !important;
 }
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
