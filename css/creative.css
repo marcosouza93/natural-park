@@ -475,11 +475,11 @@ header h1 {
     padding: 0 50px;
   }
   .carousel-caption {
-    top: 20%;
+    top: 30%;
     bottom: auto;
   }
   .carousel-caption .btn {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 @media (min-width: 750px) {
